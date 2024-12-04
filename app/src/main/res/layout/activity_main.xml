@@ -1,19 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:id="@+id/main">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/tv_top"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:background="@color/pink"
+        android:text="App name"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageButton
+        android:id="@+id/ibtn_date"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tv_top"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="24dp"
+        android:src="@drawable/calender"
+        android:background="@color/light_purple"/>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="230dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tv_top"
+        android:layout_toEndOf ="@+id/ibtn_date"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:background="@color/light_pink"
+        android:layout_marginLeft="40dp"
+        android:text="__와 함께 일정을 관리해요"/>
+
+    <TextView
+        android:id="@+id/tv_quiz"
+        android:layout_width="230dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tv_date"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="24dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:background="@color/light_pink"
+        android:text="퀴즈를 맞히고 성장해요"/>
+
+    <ImageButton
+        android:id="@+id/ibtn_quiz"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tv_date"
+        android:layout_toRightOf="@+id/tv_quiz"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="40dp"
+        android:background="@color/light_purple"
+        android:src="@drawable/quiz"/>
+
+    <ImageButton
+        android:id="@+id/ibtn_list"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/ibtn_quiz"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="24dp"
+        android:background="@color/light_purple"
+        android:src="@drawable/list"/>
+
+    <TextView
+        android:id="@+id/tv_list"
+        android:layout_width="230dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tv_quiz"
+        android:layout_toEndOf ="@+id/ibtn_date"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:background="@color/light_pink"
+        android:layout_marginLeft="40dp"
+        android:text="오늘 할 일들을 모두 마쳤나요?"/>
+
+    <TextView
+        android:id="@+id/tv_qa"
+        android:layout_width="230dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tv_list"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="24dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:background="@color/light_pink"
+        android:text="모르겠는 문제들을 \n질문하며 소통해요!"/>
+
+    <ImageButton
+        android:id="@+id/ibtn_qa"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tv_list"
+        android:layout_toRightOf="@+id/tv_qa"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="40dp"
+        android:background="@color/light_purple"
+        android:src="@drawable/qa"/>
+
+</RelativeLayout>
+
+
+
+
