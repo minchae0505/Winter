@@ -29,10 +29,27 @@ public class MainActivity extends AppCompatActivity {
 
         ImageButton ibtn_quiz = (ImageButton) findViewById(R.id.ibtn_quiz);
         ibtn_quiz.setOnClickListener(new View.OnClickListener(){
-
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, QuizActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton ibtn_list = (ImageButton) findViewById(R.id.ibtn_list);
+        ibtn_list.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ListActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton ibtn_qa = (ImageButton) findViewById(R.id.ibtn_qa);
+        ibtn_qa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TalkActivity.class);
                 startActivity(intent);
             }
         });

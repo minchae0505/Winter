@@ -9,9 +9,9 @@
             layout="@layout/bar_quiz"/>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/tv_quiz"
+            android:id="@+id/rv_quiz"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="70dp"/>
 
     </RelativeLayout>

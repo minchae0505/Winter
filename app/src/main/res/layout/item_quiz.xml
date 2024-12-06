@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.widget.Button
+        android:id="@+id/btn_front"
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="front"
+        android:background="@drawable/btn_change"/>
+
+    <android.widget.Button
+        android:id="@+id/btn_back"
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_front"
+        android:layout_marginTop="60dp"
+        android:text="back"
+        android:background="@drawable/btn_change"/>
+
+    <android.widget.Button
+        android:id="@+id/btn_and"
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_back"
+        android:layout_marginTop="60dp"
+        android:text="and"
+        android:background="@drawable/btn_change"/>
+
+    <android.widget.Button
+        android:id="@+id/btn_ios"
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_and"
+        android:layout_marginTop="60dp"
+        android:text="front"
+        android:background="@drawable/btn_change"/>
+
+</RelativeLayout>
